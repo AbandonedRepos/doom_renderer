@@ -21,7 +21,7 @@
 #include <vector>
 using namespace std;
 
-unsigned int TextureFromFileX(const char *path, const string &directory, bool gamma = false);
+inline unsigned int TextureFromFileX(const char* path, const string& directory, bool gamma = false);
 
 class Model 
 {
