@@ -8,7 +8,7 @@ set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE)
 add_subdirectory(deps)
 
 file(GLOB_RECURSE EngineSources ${CMAKE_CURRENT_SOURCE_DIR}/src/**.cpp ${CMAKE_CURRENT_SOURCE_DIR}/src/**.h)
-add_library(${PROJECT_NAME} STATIC ${EngineSources})
+add_executable(${PROJECT_NAME} ${EngineSources})
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/)
 
